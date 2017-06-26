@@ -1,0 +1,8 @@
+Bands 			: 1 2 3
+Descriptors 		: B2mean , B3mean , B4mean
+Parameter 		: Cla
+Mode 			: 'C'
+Distance 		: Manhattan
+GeoDistance 		: disabled
+STD 			: disabled
+Feature weights 	: disabled

@@ -1,0 +1,19 @@
+from supervisedClassification import supervisedClassification
+sc=supervisedClassification()
+
+imageFN="C:\\Users\\M5A97\\Desktop\\SAMPLE\\LC8189_Small.tif"
+trainingFN="C:\\Users\\M5A97\\Desktop\\SAMPLE\\apmacibasDati.shp"
+whichBands=[1,2,3]
+descriptorNames=["B2mean","B3mean","B4mean"]
+k=5
+variableNames=["Cla"]
+outputPath="C:\Users\M5A97\Desktop\PreD2\SaveScript"
+modeList=['c']
+iface= 0
+FeatWght= []
+Wght_En= 0
+Std_En= 0
+distSel=2
+geoDist=0
+geoDist_En= False
+rez=sc.knn(imageFN,trainingFN,whichBands,descriptorNames,k,variableNames,outputPath,modeList,iface,FeatWght,Wght_En,Std_En,distSel,geoDist,geoDist_En)
